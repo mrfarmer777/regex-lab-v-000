@@ -20,7 +20,9 @@ def words_five_letters_long(text)
 end
 
 def first_word_capitalized_and_ends_with_punctuation?(text)
-
+  #regex: Find word boundary, a capital letter, then any number of word characters followed by a punctuation character and a word boundary
+  result = text.scane(/\b[A-Z]\w+[!.,;]\b/)
+  return result
 end
 
 def valid_phone_number?(phone)
