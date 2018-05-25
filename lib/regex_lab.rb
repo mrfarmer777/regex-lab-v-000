@@ -30,6 +30,7 @@ def first_word_capitalized_and_ends_with_punctuation?(text)
 end
 
 def valid_phone_number?(phone)
+#regex: Get all the digits and nothing else, then check to see if you've got 10 of them.
   result = phone.scan(/\d/)
   if result.length==10
     return true
