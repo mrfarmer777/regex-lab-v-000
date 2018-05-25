@@ -14,7 +14,9 @@ def words_starting_with_un_and_ending_with_ing(text)
 end
 
 def words_five_letters_long(text)
-
+  #regex: Find a word boundary followed by five word characters and another word boundary
+  result = text.scan(/\b\w{5}\b/)
+  return result
 end
 
 def first_word_capitalized_and_ends_with_punctuation?(text)
