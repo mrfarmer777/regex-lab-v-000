@@ -1,5 +1,5 @@
 def starts_with_a_vowel?(word)
-  result = word.match('/./')
+  result = word.match(/^[aeiou]/)
   return result
 end
 
