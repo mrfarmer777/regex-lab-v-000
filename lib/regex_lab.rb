@@ -1,5 +1,5 @@
 def starts_with_a_vowel?(word)
-  result = word.match('/\w/')
+  result = word.match('/./')
   return result
 end
 
