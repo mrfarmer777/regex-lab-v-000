@@ -22,7 +22,11 @@ end
 def first_word_capitalized_and_ends_with_punctuation?(text)
   #regex: Find word boundary, a capital letter, then any number of word characters followed by a punctuation character and a word boundary
   result = text.scan(/^[A-Z].+[!.,;?]$/)
-  return result
+  if result==nil
+    return false
+  else 
+    return true
+  end
 end
 
 def valid_phone_number?(phone)
